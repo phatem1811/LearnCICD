@@ -5,6 +5,10 @@ on:
     branches:
       - master  # Thay 'main' bằng tên nhánh chính của bạn nếu khác (ví dụ: 'master')
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   deploy:
     runs-on: ubuntu-latest

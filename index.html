@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Đăng nhập</title>
-  <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Tien Phat</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="login-container">
-    <form class="login-form">
-      <h2>Login</h2>
-      <div class="input-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Nhập email" required>
-      </div>
-      <div class="input-group">
-        <label for="password">Mật khẩu</label>
-        <input type="password" id="password" placeholder="Nhập mật khẩu" required>
-      </div>
-      <button type="submit" class="login-btn">Đăng nhập</button>
-      <p class="signup-link">Chưa có tài khoản? <a href="#">Đăng ký</a></p>
-    </form>
-  </div>
+  <header>
+    <div class="container">
+      <h1>Tien Phat</h1>
+      <p>Lập trình viên Web | Yêu thích công nghệ</p>
+    </div>
+  </header>
+
+  <main class="grid-layout container">
+    <!-- Cột trái -->
+    <div class="left-column">
+      <section class="about">
+        <h2>Giới thiệu</h2>
+        <p>Mình là Phát, lập trình viên web với đam mê tạo ra sản phẩm đẹp, dễ dùng và hiệu quả.</p>
+      </section>
+
+      <section class="projects">
+        <h2>Dự án</h2>
+        <div class="project">
+          <h3>Shop Online</h3>
+          <p>Giỏ hàng, thanh toán, quản lý sản phẩm.</p>
+        </div>
+        <div class="project">
+          <h3>Blog Cá Nhân</h3>
+          <p>Viết bài, markdown, responsive.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Cột phải -->
+    <div class="right-column">
+      <section class="skills">
+        <h2>Kỹ năng</h2>
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>React / Vue</li>
+          <li>Node.js / Express</li>
+          <li>MongoDB / MySQL</li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2>Liên hệ</h2>
+        <p>Email: tienphat.dev@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/phatem1811" target="_blank">github.com/phatem1811</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tien Phat. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
